@@ -7,6 +7,7 @@ body {
 
 header, footer {
     background-color: #456A73;
+    color: #F2F2F2;
 }
 
 .site-title {
@@ -31,9 +32,9 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
-    color: #F2F2F2;
     background-color: #8ebabf;
-    border: 1px solid black;
+    border: 1px solid #072126;
+    color: #F2F2F2;
 }
 
 nav ul a:hover {
