@@ -1,8 +1,55 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: #072126;
 }
 
 header, footer {
+    background-color: #456A73;
+}
+
+.site-title {
+    color: #f2f2f2;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px #000000;
+}
+
+article ul {
+    list-style: square;
+}
+
+article ul li:nth-child(2n+1) {
+    background-color: #8ebabf;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #8ebabf;
+    border: 1px solid black;
+}
+
+nav ul a:hover {
+    color:#8ebabf;
     background-color: #f2f2f2;
 }
+
+nav ul a:focus {
+    color: #F2F2F2;
+    background-color: #072126;
+}
+
+
+/* Personal swatches list 1:
+ Gunmetal - #072126
+ Payne's gray - #456A73
+ Light blue #8EBABF
+ Drab dark brown - #594A2D
+ White smoke - #F2F2F2
+ */
