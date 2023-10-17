@@ -7,6 +7,7 @@ The handy shortcut remains "CTRL-/".
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1 {
@@ -63,6 +64,12 @@ nav ul a {
 
 article>p{
     font-size: 24px;
+    
+    /* CSS Typography properties */
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - will select the next element that is the very next sibling to the selected element, IF any exist. */
