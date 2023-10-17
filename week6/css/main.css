@@ -169,5 +169,11 @@ footer.site-footer {
 
 /* 0100 */
 #totw {
-    background-color: #d5836c;
+    /* in order to fulfill a background we need:
+    colour image repeat position-x position-y */
+    background: #d5836c url(../images/bread.jpg) no-repeat center;
+    /* background-size */
+    background-size: cover;
+    font-size: 1.5rem;
+    
 }
