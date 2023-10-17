@@ -174,6 +174,13 @@ footer.site-footer {
     background: #d5836c url(../images/bread.jpg) no-repeat center;
     /* background-size */
     background-size: cover;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    /* 16 * 1.25 = 20px */
+    /* padding pushes the element away from the walls. */
+    padding: 1em;
+    /* 1em * 20px(element font size) = 20px */
+    width: 50%;
+    /* height is 100% of the browser size, and it is dynamic. */
+    /* height: 100vh */
     
 }
