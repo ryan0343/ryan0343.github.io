@@ -184,3 +184,12 @@ footer.site-footer {
     /* height: 100vh */
     
 }
+
+section p{
+    width: 50%;
+    /* single value = top/bottom/left/right */
+    /* 2 values = first value = top/bottom, second value = left/right */
+    padding: 5em .5em;
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+}
