@@ -1,16 +1,79 @@
-nav li{
-    display: inline-block;
-    background-color: aquamarine;
-    height: 50px;
-    width: 100px;
-    margin: 0 auto;
-    font-size: 150%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #BA5624;
 }
 
-img{
-    float: left;
-    /* Use CSS to determine width, but not height */
+.container {
+    margin: 0 auto;
+    width: 75%;
+    background: #FCDE9C;
+}
 
-    /* margin: top bottom left right*/
-    margin: 0 10px 0 0;
+.h1andpicture {
+    position: relative;
+}
+
+.h1andpicture img {
+    width: 100%;
+}
+
+h1{
+    /* Sets position of header over top image */
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+    /* Adjusts size and colour of h1 text */
+    color: white;
+    font-size: 250%;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 33%;
+    font-size: 175%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Gives a margin to all elements except for the top image and header */
+
+body main {
+    margin: 1.5%;
+}
+
+article div img{
+    height: auto;
+    width: 300px;
+    max-width: 60%;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+/* Adds border and padding to form overall */
+form {
+    display: block;
+    border: 1px solid black;
+    width: 98%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+form div textarea, #fullname, #youremail {
+    width: 90%;
+}
+
+form div label, 
+
+form div textarea {
+    height: 6em;
+}
+
+footer {
+    text-align: right;
 }
