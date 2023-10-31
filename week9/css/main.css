@@ -127,6 +127,14 @@ h3~p {
     border: 4px solid darkslategrey;
 }
 
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Psuedo Classes */
 /* Styling the Navigation */
 nav ul a,
@@ -217,6 +225,14 @@ footer.site-footer {
     /* height is 100% of the browser size, and it is dynamic. */
     /* height: 100vh */
     
+    position: relative;
+    padding: 1em 1em 4em 1em;
+}
+
+.blue-link.large-text {
+    position:absolute;
+    bottom: 0;
+    right: 0;
 }
 
 section p{
@@ -233,5 +249,3 @@ section p{
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
