@@ -34,13 +34,17 @@ nav ul li {
     display: inline-block;
     text-align: center;
     font-size: 175%;
-    width: 32.5%;
+    width: 33%;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+}
+
+nav ul li:not(:first-child) {
+    border-left: solid 1px black;
 }
 
 /* Gives a margin to all elements except for the top image and header */
@@ -64,8 +68,9 @@ article ul {
 /* Adds border and padding to form overall */
 form {
     border: 1px solid black;
-    width: 90%;
-    max-width: 90%;
+    width: 98%;
+    margin: 0 auto;
+    max-width: 95%;
     padding: 15px;
 }
 
