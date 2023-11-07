@@ -1,0 +1,251 @@
+/* 
+This is a CSS comment.
+It is no different than a HTML comment in practice.
+The handy shortcut remains "CTRL-/". 
+*/
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    background-image: url(../images/white_brick_wall.png);
+}
+
+h1 {
+    color: forestgreen;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* Selecting multiple elements at the same time. */
+
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+/* 
+Selecting child elements.
+Remove the bullets from the nav, but keep bullets on merch and ingredients.
+*/
+
+nav ul {
+    list-style: none;
+}
+
+/* Selecting Child elements multiple levels. */
+
+nav ul li{
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting element with id and value. */
+/* Avoid using ID for styles, for best practice. */
+
+/* Selecting HTML Elements with class name */
+
+.blue-link {
+    padding: 0.75em;
+    width: 300px;
+    background-color: darkslategrey;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+/* Example of Float */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside{
+    width: 20%;
+}
+
+/* clear float from the section */
+section {
+    clear: both;
+}
+
+.white-text {
+    color: white;
+}
+
+/* Combinators */
+/* Direct Child selector - will only select direct child of the parent */
+
+article>p{
+    font-size: 24px;
+    
+    /* CSS Typography properties */
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibling selector - will select the next element that is the very next sibling to the selected element, IF any exist. */
+
+h3+ul {
+    border: 1px solid black;
+}
+
+/* Sibling selector - selects all following siblings of the element */
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute Selector */
+[href="#totw"] {
+    font-weight: bold;
+}
+
+[src$=".jpg"] {
+    border: 4px solid darkslategrey;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Psuedo Classes */
+/* Styling the Navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizontal, vertical, blur, spread, colour */
+    box-shadow: -2px 2px 4px 2px #000000;
+}
+
+/* add class of current to HTML home link after adding hover and focus */
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* first child and last child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling a table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selectors - even/odd */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+
+/* using the nth-child with n */
+/* where n is 0,1,2,3 until the number of elements end */
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using formula in nth-child selectors */
+/* 1, 3, 5, 7, etc. */
+
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Specificity */
+/* formula: inline style, ID, class, type */
+/*               0        0     0     0  */
+
+/* 0002 */
+body footer {
+    background-color: red;
+}
+
+/* 0001 */
+footer {
+    background-color: aqua;
+}
+
+/* 0011 */
+footer.site-footer {
+    background-color: aquamarine;
+}
+
+/* 0100 */
+#totw {
+    /* in order to fulfill a background we need:
+    colour image repeat position-x position-y */
+    background: #d5836c url(../images/bread.jpg) no-repeat center;
+    /* background-size */
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 16 * 1.25 = 20px */
+    /* padding pushes the element away from the walls. */
+    padding: 1em;
+    /* 1em * 20px(element font size) = 20px */
+    width: 50%;
+    /* height is 100% of the browser size, and it is dynamic. */
+    /* height: 100vh */
+    
+    position: relative;
+    padding: 1em 1em 4em 1em;
+}
+
+.blue-link.large-text {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+section p{
+    width: 50%;
+    /* single value = top/bottom/left/right */
+    /* 2 values = first value = top/bottom, second value = left/right */
+    padding: 5em .5em;
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+}
+
+.container{
+    /* create a container that contains everything inside the body tag */
+    max-width: 1200px;
+    margin: 0 auto;
+}
