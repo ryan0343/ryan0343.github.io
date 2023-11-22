@@ -1,1 +1,19 @@
 /* https://youtu.be/dQw4w9WgXcQ?si=teJLEvaNt1ywrICV */
+
+
+
+
+/*
+web 
+
+.ourservices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    
+    grid-template-areas:
+    "header header header header header header"
+    "digital digital digital marketing marketing marketing"
+    "video video web web print print"
+    ;
+} */
