@@ -2,55 +2,229 @@
 <html lang="en">
 
 <head>
+    <!-- Document Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media &#124; Home page</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- Commenting out for now, since we just want HTML -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="" alt="Logo">
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#info">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <form action="" class="search">
-                    <input type="text">
-                    <button></button>
-                </form>
-            </nav>
-            
-            <!-- Background image will be done in CSS for this -->
-            <div class="info" id="info">
-                <h1></h1>
-                <p></p>
-                <button></button>
+            <div class="logonavandsearch">
+
+                <div class="logoandbanner">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#info">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- Searchbar -->
+                    <form action="" class="search">
+                        <input type="text">
+                        <!-- This button is just of type button for now. It would be type submit on a proper page, but without any actions associated it just breaks the page right now. -->
+                        <button type="button">Send</button>
+                    </form>
+                </nav>
+                <!-- Na -->
+
+                <!-- Background image will be done in CSS for this -->
+                <div class="info" id="info">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p></p>
+                    <a href="#" class="btn">Connect with us</a>
+                </div>
             </div>
         </header>
         <main class="content">
+            <div class="aboutus">
+                <img src="images/about-us.jpg"
+                    alt="A open social area with a pingpong table, a table with chairs, and a patio leading outside.">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum massa, interdum vel nibh et,
+                    mattis faucibus dui. Fusce vitae volutpat est. Phasellus porta tortor nec nunc aliquam porta. Cras
+                    non finibus ipsum. Vestibulum faucibus quam ut leo tempor, nec efficitur odio pellentesque.
+                    Suspendisse potenti.
+                </p>
+                <p>
+                    In rutrum ligula sit amet ex blandit rutrum. Donec efficitur nibh quis enim sagittis, ac imperdiet
+                    tellus malesuada. Nullam ac pharetra dui, quis pellentesque orci. In hac habitasse platea dictumst.
+                    In lacus nibh, pretium vitae nisi nec, tempor ultrices lorem.
+                </p>
+            </div>
+
+            <div class="ourservices" id="ourservices">
+                <h2>Our Services</h2>
+                <section class="card">
+                    <img src="images/digital.jpg"
+                        alt="Someone using a laptop and a phone at the same time to message people.">
+                    <div class="info">
+                        <h3>Digital Transformation</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur neque officiis minima,
+                            pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
+                            modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="btn">Digital Plans</a>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <img src="images/marketing.jpg" alt="A laptop with marketing information on the screen.">
+                    <div class="info">
+                        <h3>Marketing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur neque officiis minima,
+                            pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
+                            modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="btn">Marketing Plans</a>
+                    </div>
+                </section>
 
 
-            <section class="ourservices" id="ourservices">
 
-            </section>
+                <section class="card">
+                    <img src="images/video.jpg" alt="A smartphone displaying the Youtube App in a hand.">
+                    <div class="info">
+                        <h3>Video Production</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur neque officiis minima,
+                            pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
+                            modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="btn">Video Plans</a>
+                    </div>
+                </section>
 
-            <section class="ourteam" id="ourteam">
+                <section class="card">
+                    <img src="images/web.jpg"
+                        alt="A phone, open to the Instagram login screen, laying on top of grid paper alongside a black pen.">
+                    <div class="info">
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur neque officiis minima,
+                            pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
+                            modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="btn">Web Plans</a>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="images/print.jpg"
+                        alt="A number of colourful newstands on the sidewalk of a busy city street.">
+                    <div class="info">
+                        <h3>Print</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur neque officiis minima,
+                            pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
+                            modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="btn">Print Plans</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare et ante ut ullamcorper.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+            </div>
+
+            <section class="team" id="team">
+                <h2>Our Team</h2>
+
+                <div class="ceo">
+                    <img src="images/john.jpg"
+                        alt="John Doe, Chief Executive Officer and Co-owner of Three Star Media, sitting in front of a colourful mural.">
+                    <div class="info">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor urna, eleifend non est
+                            ac, semper elementum erat. Quisque efficitur est nec est sollicitudin mollis ac id justo.
+                            Mauris hendrerit porta mi, eu tincidunt mauris efficitur sit amet. Vestibulum ante ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cfo">
+                    <img src="images/bob.jpg"
+                        alt="Bob Rite, Chief Financial Officer and Co-owner of Three Star Media, sitting in room with a plant and a exposed brick wall.">
+                    <div class="info">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor urna, eleifend non est
+                            ac, semper elementum erat. Quisque efficitur est nec est sollicitudin mollis ac id justo.
+                            Mauris hendrerit porta mi, eu tincidunt mauris efficitur sit amet. Vestibulum ante ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </div>
+
+                </div>
 
             </section>
 
             <section class="contact" id="contact">
+                <div class="sendmessage">
+                    <form action="" class="messageform">
+                        <div>
+                            <label for="fullname">Your Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Your name here!">
+                        </div>
+                        <div>
+                            <label for="youremail">Email</label>
+                            <input type="email" id="youremail">
+                        </div>
+                        <div>
+                            <label for="yourmessage">Message</label>
+                            <textarea name="yourmessage" id="yourmessage"></textarea>
+                        </div>
+                        <div>
+                            <!-- This button is just of type button for now. It would be type submit on a proper page, but without any actions associated it just breaks the page right now. -->
+                            <button type="button">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="operationhours">
+                    <table>
+                        <caption>Hours of Operation</caption>
+                        <thead>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="location">
 
+                </div>
             </section>
         </main>
         <footer>
-            <p></p>
+            Copyright &copy;
         </footer>
     </div>
 </body>
