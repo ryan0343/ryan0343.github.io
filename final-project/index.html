@@ -22,31 +22,35 @@
 
                 <nav class="main-nav">
                     <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#info">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html" class="current">Home</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#ourservices">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <!-- Searchbar -->
                     <form action="" class="search">
-                        <input type="text">
+                        <input type="text" placeholder="Search">
                         <!-- This button is just of type button for now. It would be type submit on a proper page, but without any actions associated it just breaks the page right now. -->
-                        <button type="button">Send</button>
+                        <button type="button" class="searchglass"> &#x1F50E;&#xFE0E;</button>
                     </form>
                 </nav>
                 <!-- Na -->
 
-                <!-- Background image will be done in CSS for this -->
-                <div class="info" id="info">
+                <!-- Background image will be done in CSS for this. -->
+                <!-- ^ main-banner.jpg will be used here.-->
+                <div class=" info welcome" id="welcome">
                     <h1>Welcome to Three Star Media</h1>
-                    <p></p>
-                    <a href="#" class="btn">Connect with us</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor quam vel pharetra
+                        suscipit. Sed magna libero, bibendum nec lacus ut, faucibus porta turpis. Vivamus fringilla eros
+                        id sem semper, a placerat ipsum accumsan.</p>
+                    <a href="#" class="btn connect">Connect with us</a>
                 </div>
             </div>
         </header>
         <main class="content">
-            <div class="aboutus">
+            <!-- ***** About Us Begins ***** -->
+            <div class="aboutus" id="aboutus">
                 <img src="images/about-us.jpg"
                     alt="A open social area with a pingpong table, a table with chairs, and a patio leading outside.">
                 <h2>About Us</h2>
@@ -62,7 +66,9 @@
                     In lacus nibh, pretium vitae nisi nec, tempor ultrices lorem.
                 </p>
             </div>
+            <!-- *** About Us Ends *** -->
 
+            <!-- ***** Services Begins ***** -->
             <div class="ourservices" id="ourservices">
                 <h2>Our Services</h2>
                 <section class="card">
@@ -92,8 +98,6 @@
                     </div>
                 </section>
 
-
-
                 <section class="card">
                     <img src="images/video.jpg" alt="A smartphone displaying the Youtube App in a hand.">
                     <div class="info">
@@ -120,6 +124,7 @@
                         <a href="#" class="btn">Web Plans</a>
                     </div>
                 </section>
+
                 <section class="card">
                     <img src="images/print.jpg"
                         alt="A number of colourful newstands on the sidewalk of a busy city street.">
@@ -134,15 +139,23 @@
                     </div>
                 </section>
             </div>
+            <!-- *** Services Ends *** -->
 
+            <!-- ***** Vision Begins ***** -->
             <div class="vision">
+                <!-- Background image will be done in CSS for this -->
+                <!-- ^ vision.jpg will be used here.-->
                 <h3>Our Vision</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare et ante ut ullamcorper.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare et ante ut
+                    ullamcorper.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos.
                 </p>
+                <a href="#" class="btn">Print Plans</a>
             </div>
+            <!-- *** Vision Ends *** -->
 
+            <!-- ***** Team Begins ***** -->
             <section class="team" id="team">
                 <h2>Our Team</h2>
 
@@ -177,9 +190,13 @@
                 </div>
 
             </section>
+            <!-- *** Vision Ends *** -->
 
+            <!-- ***** Contact Us Begins ***** -->
             <section class="contact" id="contact">
+                <h2>Contact Us</h2>
                 <div class="sendmessage">
+                    <h3>Send Us a message</h3>
                     <form action="" class="messageform">
                         <div>
                             <label for="fullname">Your Name</label>
@@ -200,8 +217,8 @@
                     </form>
                 </div>
                 <div class="operationhours">
+                    <h3>Hours of Operation</h3>
                     <table>
-                        <caption>Hours of Operation</caption>
                         <thead>
                             <th>Days</th>
                             <th>Hours</th>
@@ -219,12 +236,15 @@
                     </table>
                 </div>
                 <div class="location">
-
+                    <h3>Location</h3>
+                    <!-- Unsure on how to insert an interactive map in at this time.
+                    Will ask and confirm in class on how to do this. -->
                 </div>
             </section>
         </main>
         <footer>
-            Copyright &copy;
+            Copyright &copy; Three Star Media, 2020
+            <p> All images are taken from <a href="">Unsplash</a></p>
         </footer>
     </div>
 </body>
