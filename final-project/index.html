@@ -6,7 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media &#124; Home page</title>
-    <!-- Commenting out for now, since we just want HTML -->
+    <!-- Font link styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icon link styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom Stylesheets -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -32,7 +38,7 @@
                     <form action="" class="search">
                         <input type="text" placeholder="Search">
                         <!-- This button is just of type button for now. It would be type submit on a proper page, but without any actions associated it just breaks the page right now. -->
-                        <button type="button" class="searchglass"> &#x1F50E;&#xFE0E;</button>
+                        <button type="button" class="searchglass"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </nav>
                 <!-- Na -->
@@ -44,7 +50,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor quam vel pharetra
                         suscipit. Sed magna libero, bibendum nec lacus ut, faucibus porta turpis. Vivamus fringilla eros
                         id sem semper, a placerat ipsum accumsan.</p>
-                    <a href="#" class="btn connect">Connect with us</a>
+                    <a href="#" class="btn connect">Connect with us <i class="fa-solid fa-play"></i></a>
                 </div>
             </div>
         </header>
@@ -81,7 +87,7 @@
                             pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
                             modi. Quae quam iste voluptates!
                         </p>
-                        <a href="#" class="btn">Digital Plans</a>
+                        <a href="#" class="btn">Digital Plans <i class="fa-solid fa-play"></i></a>
                     </div>
                 </section>
 
@@ -94,7 +100,7 @@
                             pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
                             modi. Quae quam iste voluptates!
                         </p>
-                        <a href="#" class="btn">Marketing Plans</a>
+                        <a href="#" class="btn">Marketing Plans <i class="fa-solid fa-play"></i></a>
                     </div>
                 </section>
 
@@ -107,7 +113,7 @@
                             pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
                             modi. Quae quam iste voluptates!
                         </p>
-                        <a href="#" class="btn">Video Plans</a>
+                        <a href="#" class="btn">Video Plans <i class="fa-solid fa-play"></i></a>
                     </div>
                 </section>
 
@@ -121,7 +127,7 @@
                             pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
                             modi. Quae quam iste voluptates!
                         </p>
-                        <a href="#" class="btn">Web Plans</a>
+                        <a href="#" class="btn">Web Plans <i class="fa-solid fa-play"></i></a>
                     </div>
                 </section>
 
@@ -135,7 +141,7 @@
                             pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique
                             modi. Quae quam iste voluptates!
                         </p>
-                        <a href="#" class="btn">Print Plans</a>
+                        <a href="#" class="btn">Print Plans <i class="fa-solid fa-play"></i></a>
                     </div>
                 </section>
             </div>
@@ -237,9 +243,12 @@
                 </div>
                 <div class="location">
                     <h3>Location</h3>
-                    <!-- Unsure on how to insert an interactive map in at this time.
-                    Will ask and confirm in class on how to do this. -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44868.008544029406!2d-75.77225961502135!3d45.343754692821115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701208845976!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.307713016482!2d-75.76184074188099!3d45.35091214051581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701217143317!5m2!1sen!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
