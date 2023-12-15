@@ -7,20 +7,6 @@
 
 /* font-family: 'Open Sans', sans-serif; */
 
-/*
-web 
-
-.ourservices {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    
-    grid-template-areas:
-    "header header header header header header"
-    "digital digital digital marketing marketing marketing"
-    "video video web web print print"
-    ;
-} */
 
 /**********************************
            Custom Styles
@@ -52,6 +38,7 @@ h2{
 
 h3{
     font-size: 2.25rem;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -64,7 +51,7 @@ h5{
     margin: 0;
 }
 
-
+/*** Clearfix: the 'good luck' ruleset ***/
 .clearfix::after {
     content: '';
     display: table;
@@ -218,7 +205,7 @@ h5{
 
 .vision .btn {
     /* Background colour uses built in opacity of hex codes.*/
-    background-color: #222222bc;
+    background-color: #222222c8;
     border: 1px solid #c78c06;
 }
 
@@ -311,6 +298,11 @@ footer a {
     color: #c78c06;
 }
 
+/**************** HARRY STYLES ******************/
+
+/* https://en.wikipedia.org/wiki/Harry_Styles */
+
+/* (For assessment reasons, this is a joke.) */
 
 /*************************************************
                   Desktop Styles
@@ -319,25 +311,25 @@ footer a {
 
 @media screen and (min-width: 760px){
     
-    html {
-        /* font-size: 16px; */
-    }
+    /**** Nav web layout shenanigans ***/
 
     .logonavandsearch {
         padding: 2.25em;
     }
 
     .nav-list {
-        display: grid;
+        display: flex;
         width: 87%;
         margin: 0 auto;
-        /* font-size: 1em; */
-        grid-template-columns: 1.25fr repeat(5, 1fr) 1.75fr;
+        flex: 1;
+    }
+
+    .nav-list img {
+        scale: 90%;
     }
 
     .nav-list li {
         flex: 1;
-        border: none;
         align-self: center;
         /* flex: 0 0 1; */
     }
@@ -349,11 +341,9 @@ footer a {
 
     .search input {
         font-size: 1em;
-        width: 20%;
+        width: auto;
+        max-width: 70%;
         height: 1.5rem;
-    }
-
-    .search {
     }
 
     .searchglass {
@@ -366,12 +356,139 @@ footer a {
         padding: 6px;
     }
 
-    .welcome {
+    /**** Welcome and chunk layout shenanigans ***/
 
+    .welcome .info, .visioninfo {
+        width: 82%;
+        margin: 0 auto;
     }
+
+    .chunk {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /******* About Us layout adjustment *********/
+
+    .aboutus .chunk{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    .aboutus h2 {
+        margin: 0;
+    }
+
+    .aboutus img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .aboutus .aboutinfo {
+        width: 85%;
+    }
+
+    /******* Our Services layout adjustment *********/
+
+    .ourservices {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        
+        grid-template-areas:
+        "header header header header header header"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print"
+        ;
+    }
+
+    .ourservices h2 {
+        grid-area: header;
+    }
+
+    .ourservices .card:nth-child(2){
+        grid-area: digital;
+    }
+
+    .ourservices .card:nth-child(3){
+        grid-area: marketing;
+    }
+
+    .ourservices .card:nth-child(4){
+        grid-area: video;
+    }
+
+    .ourservices .card:nth-child(5){
+        grid-area: web;
+    }
+
+    .ourservices .card:last-child{
+        grid-area: print;
+    }
+
+    /* Sets layout buttons to width 100% */
+    .ourservices .btn {
+        display: block;
+        width: fill;
+        text-align: center;
+    }
+
+    /******* Contact Us layout adjustment *********/
+
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ceo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ceo img, .cfo img {
+        max-width: 50%;
+    }
+
+    .cfo {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .contact {
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        
+        grid-template-areas:
+        "header header"
+        "message map"
+        "operation operation"
+        ;
+    }
+
+    .contact h2 {
+        grid-area: header;
+    }
+
+    .contact .sendmessage {
+        grid-area: message;
+    }
+
+    .contact .map {
+        grid-area: map;
+    }
+
+    .contact .operationhours {
+        grid-area: operation;
+    }
+
+    footer p {
+        width: 87%;
+        margin: 1em auto;
+    }
+
 }
-
-
-/**************** HARRY STYLES ******************/
-
-/* https://en.wikipedia.org/wiki/Harry_Styles */
