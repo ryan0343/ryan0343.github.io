@@ -486,6 +486,8 @@ footer a {
         grid-area: operation;
     }
 
+    /******* Footer layout adjustment *********/
+
     footer p {
         width: 87%;
         margin: 1em auto;
