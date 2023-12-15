@@ -28,3 +28,229 @@ web
     "video video web web print print"
     ;
 } */
+
+/**********************************
+           Custom Styles
+***********************************/
+
+/********* Global Styles **********/
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1{
+    font-size: 5.063rem;
+}
+
+h2{
+    font-size: 3.375rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-size: 2.25rem;
+    margin: 0.5rem 0;
+}
+
+h4{
+    font-size: 1.5rem;
+
+}
+
+h5{
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*********************
+ Card and Chunk Styles
+**********************/
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #222;
+    padding: 25px;
+}
+
+.chunk img {
+    width: 100%;
+    margin: auto 0;
+}
+
+.chunk {
+    width: 90%;
+}
+
+.card {
+    margin: 1em 0 0 0;
+}
+/************* NAV STYLES *****************/
+.logonavandsearch {
+    background-color: #222;
+    width: 100%;
+    padding: 1em;
+}
+
+ .nav-list {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 0;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+.nav-list a,
+.nav-list :link,
+.nav-list :visited {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav-list li:first-child {
+    padding-top: 1em;
+}
+
+.nav-list li .current, .nav-list li:first-child {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.nav-list li form {
+    width: 100%;
+}
+
+.nav-list li input {
+    width: auto;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.searchglass {
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    background-color: #222;
+    height: 2.9rem;
+    font-size: 1.5rem;
+}
+/************* WELCOME STYLES *****************/
+
+.welcome {
+    display: block;
+    background: url("../images/main-banner.jpg");
+    width: 100%;
+    padding: 4em 0;
+}
+
+.welcome .info {
+    background-color: #222222bc;
+    color: white;
+    padding: 1em;
+}
+
+.welcome .btn {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.aboutus, .card, .info {
+    background-color: #ffe6ac;
+}
+
+
+/************* ABOUT US STYLES *****************/
+
+.aboutus {
+    padding: 1em;
+}
+
+/************* SERVICES STYLES *****************/
+
+.info {
+    padding: 1em;
+}
+
+/************* VISION STYLES *****************/
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-size: 100% 200%;
+    color: white;
+    padding: 1em;
+}
+
+.vision .btn {
+    background-color: #222222bc;
+}
+
+/* .vision .btn {
+
+} */
+
+/************* CONTACT US STYLES *****************/
+
+.operationhours {
+    width: 100%;
+}
+
+.operationhours table {
+    width: 100%;
+}
+
+.operationhours table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+.operationhours th {
+    background-color: #ffe6ac;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+/**************** FOOTER STYLES ******************/
+footer {
+    color: #c78c06;
+    background-color: #222;
+}
+
+footer a {
+    color: #c78c06;
+}
+
+/**************** TEAM STYLES ******************/
+
+
+
+/**************** HARRY STYLES ******************/
+
+/* https://en.wikipedia.org/wiki/Harry_Styles */
